@@ -1,0 +1,19 @@
+{
+  "name": "El primer timbre",
+  "short_name": "Primer timbre",
+  "description": "Libro digital interactivo sobre el paso de primaria a secundaria.",
+  "lang": "es-PE",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf3",
+  "theme_color": "#12263a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
