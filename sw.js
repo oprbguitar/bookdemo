@@ -1,4 +1,4 @@
-const CACHE_NAME = "primer-timbre-v3";
+const CACHE_NAME = "primer-timbre-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,7 +6,9 @@ const APP_SHELL = [
   "./styles-base.css",
   "./script.js",
   "./manifest.webmanifest",
-  "./icon.svg"
+  "./icon.svg",
+  "./assets/chapters-a.webp",
+  "./assets/chapters-b.webp"
 ];
 
 self.addEventListener("install", event => {
