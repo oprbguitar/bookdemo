@@ -102,8 +102,8 @@
 }
 
 /* Ilustración narrativa dentro del lector.
-   Se usan dos sprites WebP optimizados para conservar el rendimiento y
-   no modificar las tarjetas, el flujo del texto ni la navegación. */
+   El SVG contiene las diez escenas y se publica directamente con Pages,
+   sin reconstrucción de archivos base64 durante el despliegue. */
 .reader-content::before {
   content: "";
   display: block;
@@ -112,61 +112,23 @@
   margin: 0 0 clamp(24px, 4vw, 42px);
   border: 1px solid rgba(18, 38, 58, .12);
   border-radius: 20px;
+  background-image: url("./assets/chapters.svg");
   background-repeat: no-repeat;
-  background-size: 500% 100%;
+  background-size: 1000% 100%;
   background-color: #e8ded0;
   box-shadow: 0 18px 46px rgba(18, 38, 58, .12);
 }
 
-.reader-dialog:has(#readerProgressBar[style*="width: 10%"]) .reader-content::before {
-  background-image: url("./assets/chapters-a.webp");
-  background-position: 0% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 20%"]) .reader-content::before {
-  background-image: url("./assets/chapters-a.webp");
-  background-position: 25% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 30%"]) .reader-content::before {
-  background-image: url("./assets/chapters-a.webp");
-  background-position: 50% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 40%"]) .reader-content::before {
-  background-image: url("./assets/chapters-a.webp");
-  background-position: 75% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 50%"]) .reader-content::before {
-  background-image: url("./assets/chapters-a.webp");
-  background-position: 100% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 60%"]) .reader-content::before {
-  background-image: url("./assets/chapters-b.webp");
-  background-position: 0% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 70%"]) .reader-content::before {
-  background-image: url("./assets/chapters-b.webp");
-  background-position: 25% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 80%"]) .reader-content::before {
-  background-image: url("./assets/chapters-b.webp");
-  background-position: 50% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 90%"]) .reader-content::before {
-  background-image: url("./assets/chapters-b.webp");
-  background-position: 75% 50%;
-}
-
-.reader-dialog:has(#readerProgressBar[style*="width: 100%"]) .reader-content::before {
-  background-image: url("./assets/chapters-b.webp");
-  background-position: 100% 50%;
-}
+.reader-dialog:has(#readerProgressBar[style*="width: 10%"] ) .reader-content::before { background-position: 0% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 20%"] ) .reader-content::before { background-position: 11.111% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 30%"] ) .reader-content::before { background-position: 22.222% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 40%"] ) .reader-content::before { background-position: 33.333% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 50%"] ) .reader-content::before { background-position: 44.444% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 60%"] ) .reader-content::before { background-position: 55.556% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 70%"] ) .reader-content::before { background-position: 66.667% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 80%"] ) .reader-content::before { background-position: 77.778% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 90%"] ) .reader-content::before { background-position: 88.889% 50%; }
+.reader-dialog:has(#readerProgressBar[style*="width: 100%"] ) .reader-content::before { background-position: 100% 50%; }
 
 @media (max-width: 780px) {
   .emotion-map .panel-heading,
