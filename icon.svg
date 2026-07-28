@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="El primer timbre">
+  <rect width="512" height="512" rx="112" fill="#12263a"/>
+  <path d="M122 138c54-18 97-8 134 27v221c-37-35-80-45-134-27V138Z" fill="#fffaf3"/>
+  <path d="M390 138c-54-18-97-8-134 27v221c37-35 80-45 134-27V138Z" fill="#f7f0e7"/>
+  <path d="M256 166v221" stroke="#178f92" stroke-width="12" stroke-linecap="round"/>
+  <path d="M318 104c0-34-28-61-62-61s-62 27-62 61c0 56-29 73-29 101h182c0-28-29-45-29-101Z" fill="#f2c55c" stroke="#fffaf3" stroke-width="13" stroke-linejoin="round"/>
+  <path d="M230 209c4 23 14 36 26 36s22-13 26-36" fill="#ef6b4d" stroke="#fffaf3" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="256" cy="89" r="13" fill="#ef6b4d"/>
+</svg>
