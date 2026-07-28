@@ -1,4 +1,4 @@
-const CACHE_NAME = "primer-timbre-v2";
+const CACHE_NAME = "primer-timbre-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
