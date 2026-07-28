@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12263a">
+  <meta name="description" content="El primer timbre: un libro digital interactivo y humano sobre el paso de primaria a secundaria en el Perú.">
+  <meta property="og:title" content="El primer timbre">
+  <meta property="og:description" content="Lo que dije, lo que pensé y lo que nunca conté sobre mi ingreso a secundaria.">
+  <meta property="og:type" content="website">
+  <title>El primer timbre · Libro interactivo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-bell" aria-hidden="true">🔔</span>
+      <span>El primer timbre</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#historia">La historia</a>
+      <a href="#capitulos">Capítulos</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#familias">Familias</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="soundToggle" type="button" aria-label="Activar sonidos ambientales" aria-pressed="false">♪</button>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil" hidden>
+    <a href="#historia">La historia</a>
+    <a href="#capitulos">Capítulos</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#familias">Familias</a>
+  </nav>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="hand-note">A veces “bien” significa muchas cosas.</p>
+        <h1 id="hero-title">El primer<br><span>timbre</span></h1>
+        <p class="hero-subtitle">Lo que dije, lo que pensé y lo que nunca conté sobre mi ingreso a secundaria.</p>
+        <p class="hero-description">Una historia peruana, breve y sensible sobre dejar la primaria, cruzar una puerta nueva y descubrir que pedir ayuda también es crecer.</p>
+        <div class="hero-actions">
+          <button class="primary-button" id="startReading" type="button">Comenzar a leer</button>
+          <button class="secondary-button" id="playIntro" type="button"><span aria-hidden="true">▶</span> Escuchar introducción</button>
+        </div>
+        <div class="progress-summary" aria-live="polite">
+          <span>Tu recorrido</span>
+          <div class="progress-track" aria-hidden="true"><span id="heroProgress"></span></div>
+          <strong id="heroProgressText">0 de 10 capítulos</strong>
+        </div>
+      </div>
+
+      <div class="hero-scene" aria-label="Ilustración de un estudiante frente a su nuevo colegio">
+        <div class="sun-wash"></div>
+        <div class="school-building">
+          <div class="flag">🇵🇪</div>
+          <div class="school-sign">I. E. NUEVO HORIZONTE</div>
+          <div class="window-row"><i></i><i></i><i></i><i></i></div>
+          <div class="school-door"></div>
+          <div class="wall-message">Todo comienza<br>con un primer paso.</div>
+        </div>
+        <div class="student">
+          <div class="student-head"><span class="hair"></span></div>
+          <div class="student-body"><span class="backpack"></span><span class="notebook"></span></div>
+        </div>
+        <div class="floating-thought thought-one">¿Y si no conozco a nadie?</div>
+        <div class="floating-thought thought-two">Respira. Un paso a la vez.</div>
+      </div>
+    </section>
+
+    <section class="story-system" id="historia" aria-labelledby="voices-title">
+      <div class="section-heading centered">
+        <p>Una historia. Tres voces.</p>
+        <h2 id="voices-title">Lo que pasa afuera no siempre se parece a lo que ocurre dentro.</h2>
+      </div>
+      <div class="voice-grid">
+        <article class="voice-card voice-scene">
+          <span class="voice-icon" aria-hidden="true">📖</span>
+          <h3>Lo que sucede</h3>
+          <p>La escena tal como ocurre: el colegio, las miradas, las reglas y los pequeños momentos.</p>
+        </article>
+        <article class="voice-card voice-said">
+          <span class="voice-icon" aria-hidden="true">💬</span>
+          <h3>Lo que digo</h3>
+          <p>La versión corta que cuento cuando me preguntan cómo estuvo mi día.</p>
+        </article>
+        <article class="voice-card voice-felt">
+          <span class="voice-icon" aria-hidden="true">♡</span>
+          <h3>Lo que siento</h3>
+          <p>La parte que todavía no sé explicar, pero que también merece ser escuchada.</p>
+        </article>
+      </div>
+      <blockquote class="story-quote">
+        <span>“</span>
+        <p>Mi mamá preguntó: «¿Cómo te fue?». Yo dije: «Bien». La verdad era mucho más larga.</p>
+      </blockquote>
+    </section>
+
+    <section class="chapters-section" id="capitulos" aria-labelledby="chapters-title">
+      <div class="section-heading split-heading">
+        <div>
+          <p>Diez momentos</p>
+          <h2 id="chapters-title">Un año contado desde adentro</h2>
+        </div>
+        <p class="section-intro">Cada capítulo dura entre cinco y ocho minutos. Puedes leerlo, escucharlo y responder una pregunta personal.</p>
+      </div>
+      <div class="chapter-timeline" id="chapterGrid"></div>
+    </section>
+
+    <section class="daily-voice" aria-labelledby="today-title">
+      <div class="voice-wave" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="daily-copy">
+        <p>Voz del día</p>
+        <h2 id="today-title">“No tenía miedo del colegio. Tenía miedo de no encontrar un lugar dentro de él.”</h2>
+        <button class="text-button" id="playDailyVoice" type="button">Escuchar esta frase <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="emotion-orbit" aria-hidden="true">
+        <span>miedo</span><span>curiosidad</span><span>esperanza</span>
+      </div>
+    </section>
+
+    <section class="activities-section" id="actividades" aria-labelledby="activities-title">
+      <div class="section-heading">
+        <p>Tu parte de la historia</p>
+        <h2 id="activities-title">Actividades que no tienen nota</h2>
+        <p class="section-intro">No necesitas escribir bonito ni encontrar la respuesta perfecta. Solo reconocer lo que te está pasando.</p>
+      </div>
+
+      <div class="activity-layout">
+        <article class="emotion-map activity-panel">
+          <div class="panel-heading">
+            <span>01</span>
+            <div><h3>Mapa emocional del colegio</h3><p>Toca un espacio y elige cómo te hace sentir.</p></div>
+          </div>
+          <div class="school-map" id="schoolMap">
+            <button type="button" data-place="Entrada">Entrada</button>
+            <button type="button" data-place="Aula">Aula</button>
+            <button type="button" data-place="Patio">Patio</button>
+            <button type="button" data-place="Biblioteca">Biblioteca</button>
+            <button type="button" data-place="Baños">Baños</button>
+            <button type="button" data-place="Quiosco">Quiosco</button>
+          </div>
+          <div class="emotion-picker" id="emotionPicker" hidden>
+            <p id="emotionQuestion">¿Cómo te hace sentir este lugar?</p>
+            <div>
+              <button type="button" data-emotion="tranquilo" aria-label="Tranquilo">😌</button>
+              <button type="button" data-emotion="curioso" aria-label="Curioso">🤔</button>
+              <button type="button" data-emotion="nervioso" aria-label="Nervioso">😟</button>
+              <button type="button" data-emotion="alegre" aria-label="Alegre">😊</button>
+              <button type="button" data-emotion="incómodo" aria-label="Incómodo">😣</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="unsent-message activity-panel">
+          <div class="panel-heading">
+            <span>02</span>
+            <div><h3>El mensaje que no envié</h3><p>Escribe algo que quisiste decir y no pudiste.</p></div>
+          </div>
+          <label for="unsentText">Hoy quería decirte que…</label>
+          <textarea id="unsentText" maxlength="500" placeholder="Puedes escribir aquí. Se guardará únicamente en este dispositivo."></textarea>
+          <div class="textarea-footer">
+            <span id="charCount">0 / 500</span>
+            <button class="small-button" id="saveUnsent" type="button">Guardar para mí</button>
+          </div>
+          <p class="privacy-note">🔒 Este texto no se envía a ningún servidor.</p>
+        </article>
+
+        <article class="adaptation-light activity-panel">
+          <div class="panel-heading">
+            <span>03</span>
+            <div><h3>Semáforo de adaptación</h3><p>Una fotografía de cómo te sientes hoy.</p></div>
+          </div>
+          <div class="traffic-options" role="group" aria-label="Nivel de adaptación">
+            <button type="button" data-level="red"><i></i><span>Necesito hablar de esto</span></button>
+            <button type="button" data-level="yellow"><i></i><span>Todavía necesito ayuda</span></button>
+            <button type="button" data-level="green"><i></i><span>Ya puedo hacerlo</span></button>
+          </div>
+          <p id="trafficFeedback" class="activity-feedback" aria-live="polite">Elige el color que más se acerque a tu día.</p>
+        </article>
+
+        <article class="choice-story activity-panel">
+          <div class="panel-heading">
+            <span>04</span>
+            <div><h3>¿Qué harías tú?</h3><p>No hay respuestas perfectas; hay decisiones y consecuencias.</p></div>
+          </div>
+          <p class="choice-prompt">Durante el recreo ves que un compañero está solo y finge ordenar su mochila.</p>
+          <div class="choice-options" id="choiceOptions">
+            <button type="button" data-choice="invite">Le pregunto si quiere sentarse conmigo.</button>
+            <button type="button" data-choice="adult">Busco a alguien que pueda acompañarlo.</button>
+            <button type="button" data-choice="wait">No hago nada, pero sigo observando.</button>
+          </div>
+          <div id="choiceResult" class="choice-result" hidden></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="family-section" id="familias" aria-labelledby="family-title">
+      <div class="family-illustration" aria-hidden="true">
+        <div class="table"></div>
+        <div class="adult-person"></div>
+        <div class="young-person"></div>
+        <div class="speech-line">¿Quieres que te escuche o que pensemos una solución?</div>
+      </div>
+      <div class="family-copy">
+        <p>Para familias y docentes</p>
+        <h2 id="family-title">Acompañar sin invadir</h2>
+        <p>La adaptación puede parecer silenciosa. Estas preguntas ayudan a abrir una conversación sin convertirla en interrogatorio.</p>
+        <div class="conversation-cards">
+          <button type="button" class="conversation-card" data-phrase="¿Qué momento de hoy te gustaría volver a vivir?">¿Qué momento de hoy te gustaría volver a vivir?</button>
+          <button type="button" class="conversation-card" data-phrase="¿Hubo algo que te hizo sentir fuera de lugar?">¿Hubo algo que te hizo sentir fuera de lugar?</button>
+          <button type="button" class="conversation-card" data-phrase="¿Quieres que te escuche o que pensemos una solución?">¿Quieres que te escuche o que pensemos una solución?</button>
+        </div>
+        <button class="secondary-button" id="familyGuide" type="button">Abrir guía de conversación</button>
+      </div>
+    </section>
+
+    <section class="print-bridge" aria-labelledby="bridge-title">
+      <div>
+        <p>Del papel a la voz</p>
+        <h2 id="bridge-title">Un libro que también puede imprimirse</h2>
+        <p>La versión impresa puede incluir códigos QR para escuchar escenas, pensamientos y conversaciones. Los enlaces permanecen en una página estable para poder actualizar el contenido sin volver a imprimir.</p>
+        <button class="primary-button" id="printBook" type="button">Imprimir versión breve</button>
+      </div>
+      <div class="qr-card">
+        <div class="qr-pattern" aria-label="Representación de un código QR">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <strong>Escucha el capítulo</strong>
+        <span>Voz, ambiente y transcripción</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="#inicio"><span aria-hidden="true">🔔</span><span>El primer timbre</span></a>
+      <p>Una experiencia editorial creada para adolescentes, familias y docentes.</p>
+    </div>
+    <div>
+      <strong>Explorar</strong>
+      <a href="#capitulos">Capítulos</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#familias">Para familias</a>
+    </div>
+    <div>
+      <strong>Privacidad</strong>
+      <p>Sin cuentas, sin anuncios y sin recopilación de datos personales.</p>
+    </div>
+    <div class="footer-note">Hecho con cuidado en Perú. <span>♡</span></div>
+  </footer>
+
+  <dialog class="reader-dialog" id="readerDialog">
+    <article class="reader-shell">
+      <header class="reader-header">
+        <div>
+          <span id="readerChapterNumber">Capítulo 1</span>
+          <strong id="readerChapterTitle">Despedidas</strong>
+        </div>
+        <div class="reader-tools">
+          <button id="readerSpeak" type="button" aria-label="Escuchar capítulo">▶ Escuchar</button>
+          <button id="readerFont" type="button" aria-label="Cambiar tamaño del texto">Aa</button>
+          <button id="readerClose" type="button" aria-label="Cerrar lector">Cerrar</button>
+        </div>
+      </header>
+      <div class="reader-progress"><span id="readerProgressBar"></span></div>
+      <div class="reader-content" id="readerContent"></div>
+      <footer class="reader-footer">
+        <button id="readerPrev" type="button">← Anterior</button>
+        <span id="readerPageInfo">1 de 10</span>
+        <button id="readerNext" type="button">Siguiente →</button>
+      </footer>
+    </article>
+  </dialog>
+
+  <dialog class="simple-dialog" id="familyDialog">
+    <article>
+      <button class="dialog-close" type="button" data-close-dialog="familyDialog">Cerrar</button>
+      <p class="dialog-label">Guía breve</p>
+      <h2>Conversar después del colegio</h2>
+      <ol>
+        <li><strong>Empiece por algo concreto.</strong> Pregunte por un momento, no por todo el día.</li>
+        <li><strong>Escuche antes de corregir.</strong> La primera necesidad puede ser sentirse comprendido.</li>
+        <li><strong>Nombre la emoción con cuidado.</strong> «Parece que eso te preocupó» abre más que «estás exagerando».</li>
+        <li><strong>Pregunte qué necesita.</strong> Escucha, compañía, una idea o intervención adulta.</li>
+        <li><strong>Vuelva al tema.</strong> Algunas historias necesitan más de una conversación.</li>
+      </ol>
+      <blockquote>Una buena pregunta no obliga a hablar. Deja una puerta abierta.</blockquote>
+    </article>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
