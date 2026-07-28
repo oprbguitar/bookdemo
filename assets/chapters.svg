@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16000" height="900" viewBox="0 0 16000 900" role="img" aria-label="Diez escenas ilustradas sobre el paso de primaria a secundaria">
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff5df"/><stop offset="1" stop-color="#e7c48e"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bfe3ef"/><stop offset="1" stop-color="#fff2cf"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7ea889"/><stop offset="1" stop-color="#3e6a62"/></linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7e4c0"/><stop offset="1" stop-color="#d8b17d"/></linearGradient>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .055 0"/><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <symbol id="student" viewBox="0 0 220 420">
+      <ellipse cx="110" cy="80" rx="60" ry="68" fill="#b97952"/>
+      <path d="M48 72Q63 3 115 12q61 2 63 72-28-37-63-40-38 0-67 28" fill="#2b211c"/>
+      <path d="M57 148q53-35 106 0l33 209H25z" fill="#f7f2e8"/>
+      <path d="M25 357h171v63H25z" fill="#27445d"/>
+      <circle cx="87" cy="79" r="5" fill="#202a32"/><circle cx="137" cy="79" r="5" fill="#202a32"/>
+      <path d="M94 112q18 12 36 0" fill="none" stroke="#6f3f31" stroke-width="5" stroke-linecap="round"/>
+      <path d="M51 164h118" stroke="#b7c8d0" stroke-width="5"/>
+    </symbol>
+    <symbol id="teacher" viewBox="0 0 240 440">
+      <ellipse cx="120" cy="78" rx="63" ry="68" fill="#a86848"/>
+      <path d="M54 75q20-76 77-60 54 6 54 69-24-37-60-42-36 1-71 33" fill="#31251f"/>
+      <path d="M48 145q72-37 145 0l26 255H20z" fill="#8d6685"/>
+      <path d="M20 400h199v40H20z" fill="#263f54"/>
+      <circle cx="96" cy="78" r="5" fill="#202a32"/><circle cx="145" cy="78" r="5" fill="#202a32"/>
+      <path d="M99 111q21 14 42 0" fill="none" stroke="#6b3d30" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="desk" viewBox="0 0 420 180"><rect x="15" y="0" width="390" height="35" rx="12" fill="#8a5b38"/><rect x="45" y="30" width="24" height="150" fill="#65442f"/><rect x="350" y="30" width="24" height="150" fill="#65442f"/></symbol>
+    <symbol id="window" viewBox="0 0 500 350"><rect width="500" height="350" rx="10" fill="url(#sky)"/><path d="M0 245 110 145l105 82 95-126 190 144v105H0z" fill="#8ba4a1"/><path d="M0 272 120 192l92 65 101-96 187 115v74H0z" fill="#d8c28d"/><path d="M250 0v350M0 175h500" stroke="#765a42" stroke-width="18"/></symbol>
+  </defs>
+
+  <!-- 1. Despedidas -->
+  <g transform="translate(0)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="url(#warm)"/><rect y="560" width="1600" height="340" fill="#c2945f"/>
+    <use href="#window" x="70" y="70" width="540" height="370"/>
+    <use href="#teacher" x="1190" y="170" width="230" height="430"/>
+    <use href="#student" x="610" y="255" width="220" height="420"/><use href="#student" x="860" y="260" width="205" height="405"/>
+    <path d="M835 410q55-45 115 0" stroke="#d56d66" stroke-width="12" fill="none"/>
+    <rect x="620" y="420" width="190" height="155" rx="18" fill="#fffaf0" stroke="#d8b28a" stroke-width="6"/>
+    <path d="M650 470l35 22 45-40 42 30" stroke="#dc6f74" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <use href="#desk" x="510" y="675" width="560" height="215"/>
+    <circle cx="1110" cy="540" r="75" fill="#e5b45a" opacity=".55"/>
+  </g>
+
+  <!-- 2. Entre dudas -->
+  <g transform="translate(1600)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="#f3dec0"/><rect y="650" width="1600" height="250" fill="#b07c55"/>
+    <use href="#window" x="80" y="70" width="520" height="360"/>
+    <use href="#student" x="600" y="250" width="235" height="445"/>
+    <use href="#teacher" x="1160" y="180" width="220" height="405"/>
+    <use href="#desk" x="430" y="650" width="700" height="250"/>
+    <rect x="545" y="610" width="250" height="55" rx="8" fill="#6c7fa2"/><rect x="785" y="618" width="220" height="48" rx="8" fill="#c76d5b"/>
+    <rect x="890" y="470" width="160" height="125" fill="#fff9e7" stroke="#937458" stroke-width="6" transform="rotate(-7 970 530)"/>
+    <path d="M925 520h90M925 548h65" stroke="#74909d" stroke-width="7"/>
+    <circle cx="750" cy="350" r="8" fill="#263340"/><circle cx="810" cy="350" r="8" fill="#263340"/>
+  </g>
+
+  <!-- 3. Un lugar nuevo -->
+  <g transform="translate(3200)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="url(#sky)"/><path d="M0 260h1600v640H0z" fill="#ead6b2"/>
+    <path d="M90 170h1420v570H90z" fill="#d7b98c" stroke="#7a6147" stroke-width="10"/>
+    <path d="M260 250h1080v430H260z" fill="#f2e4c9"/>
+    <path d="M790 250v430M260 460h1080" stroke="#6d8b78" stroke-width="24"/>
+    <g fill="#527386"><rect x="330" y="300" width="180" height="100"/><rect x="560" y="300" width="180" height="100"/><rect x="860" y="300" width="180" height="100"/><rect x="1090" y="300" width="180" height="100"/></g>
+    <use href="#teacher" x="180" y="350" width="230" height="420"/><use href="#student" x="430" y="410" width="225" height="420"/>
+    <circle cx="1325" cy="720" r="110" fill="#71926c"/><circle cx="1425" cy="690" r="85" fill="#86a877"/>
+  </g>
+
+  <!-- 4. Primer día -->
+  <g transform="translate(4800)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="#f6e2bd"/><rect y="690" width="1600" height="210" fill="#9f704a"/>
+    <rect x="85" y="85" width="370" height="640" rx="12" fill="#8a593d"/><rect x="130" y="125" width="280" height="560" fill="#f8edd4"/>
+    <use href="#student" x="300" y="250" width="250" height="470"/>
+    <g transform="translate(720 270)"><use href="#student" width="180" height="350"/><use href="#student" x="230" y="10" width="180" height="350"/><use href="#student" x="460" y="5" width="180" height="350"/></g>
+    <path d="M1215 120c0 74-56 105-113 105s-113-31-113-105z" fill="#d9a63e" stroke="#74502e" stroke-width="8"/><path d="M1102 40v80" stroke="#74502e" stroke-width="15"/><circle cx="1102" cy="225" r="18" fill="#74502e"/>
+    <path d="M560 680h830" stroke="#596d73" stroke-width="18"/>
+  </g>
+
+  <!-- 5. Nuevas reglas -->
+  <g transform="translate(6400)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="#f2dec1"/><use href="#window" x="70" y="70" width="520" height="350"/>
+    <use href="#student" x="580" y="260" width="245" height="460"/><use href="#teacher" x="1180" y="190" width="220" height="410"/>
+    <use href="#desk" x="420" y="670" width="750" height="230"/>
+    <g><rect x="700" y="590" width="370" height="55" rx="8" fill="#486b88"/><rect x="730" y="535" width="340" height="55" rx="8" fill="#bd6d5a"/><rect x="770" y="480" width="300" height="55" rx="8" fill="#d3aa51"/><rect x="820" y="425" width="250" height="55" rx="8" fill="#718d74"/></g>
+    <rect x="1040" y="180" width="320" height="210" rx="16" fill="#fffaf0" stroke="#8f785d" stroke-width="8"/>
+    <path d="M1085 230h220M1085 275h160M1085 320h195" stroke="#6b8793" stroke-width="11"/>
+  </g>
+
+  <!-- 6. Recreos y amigos -->
+  <g transform="translate(8000)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="url(#sky)"/><rect y="610" width="1600" height="290" fill="#cdb27c"/>
+    <rect x="190" y="620" width="800" height="65" rx="20" fill="#8b5b39"/><rect x="250" y="680" width="35" height="180" fill="#63442f"/><rect x="890" y="680" width="35" height="180" fill="#63442f"/>
+    <circle cx="260" cy="180" r="170" fill="#6d956c"/><circle cx="430" cy="160" r="150" fill="#7ea776"/><rect x="322" y="230" width="65" height="390" fill="#765036"/>
+    <use href="#student" x="430" y="270" width="230" height="430"/><use href="#student" x="700" y="280" width="220" height="420"/>
+    <circle cx="620" cy="640" r="34" fill="#d7a55a"/><rect x="570" y="610" width="105" height="35" rx="12" fill="#f4e0ad"/>
+    <g opacity=".82"><use href="#student" x="1120" y="345" width="160" height="300"/><use href="#student" x="1300" y="350" width="155" height="295"/></g>
+  </g>
+
+  <!-- 7. Lo difícil -->
+  <g transform="translate(9600)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="#e8d3b7"/><use href="#window" x="70" y="70" width="520" height="350"/>
+    <use href="#student" x="520" y="280" width="250" height="460"/><use href="#teacher" x="1160" y="205" width="220" height="405"/>
+    <use href="#desk" x="370" y="680" width="750" height="220"/>
+    <rect x="690" y="535" width="330" height="165" rx="10" fill="#fffdf6" stroke="#cab293" stroke-width="7" transform="rotate(-4 855 617)"/>
+    <path d="M740 580h200M740 625h155" stroke="#78909b" stroke-width="10"/>
+    <circle cx="960" cy="575" r="45" fill="none" stroke="#c64f4f" stroke-width="12"/><path d="M940 575l15 15 30-36" fill="none" stroke="#c64f4f" stroke-width="9"/>
+    <path d="M600 360q38-25 80 0" stroke="#6c3b31" stroke-width="7" fill="none"/>
+  </g>
+
+  <!-- 8. Pedir ayuda -->
+  <g transform="translate(11200)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="#f1ddbf"/><use href="#window" x="80" y="70" width="500" height="350"/>
+    <use href="#student" x="460" y="300" width="240" height="440"/><use href="#teacher" x="930" y="220" width="250" height="450"/>
+    <use href="#desk" x="390" y="670" width="800" height="230"/>
+    <rect x="680" y="520" width="300" height="170" rx="12" fill="#fffaf0" stroke="#9b7f60" stroke-width="7"/>
+    <path d="M720 565h210M720 610h150" stroke="#6b8793" stroke-width="10"/>
+    <path d="M920 590l95-70" stroke="#7f5140" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="1130" cy="290" r="65" fill="#e7bb61" opacity=".35"/>
+  </g>
+
+  <!-- 9. Encontrar mi lugar -->
+  <g transform="translate(12800)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="url(#sky)"/><path d="M0 230h1600v670H0z" fill="#ead7b3"/>
+    <path d="M70 190h1460v600H70z" fill="#d3b284" stroke="#745a43" stroke-width="10"/>
+    <path d="M130 260h1340v440H130z" fill="#f0e2c8"/>
+    <path d="M130 470h1340" stroke="#66826f" stroke-width="26"/>
+    <g fill="#527287"><rect x="220" y="300" width="200" height="110"/><rect x="500" y="300" width="200" height="110"/><rect x="1000" y="300" width="200" height="110"/><rect x="1280" y="300" width="140" height="110"/></g>
+    <use href="#student" x="620" y="330" width="260" height="480"/>
+    <g opacity=".9"><use href="#student" x="180" y="420" width="170" height="320"/><use href="#student" x="1080" y="420" width="175" height="325"/></g>
+    <path d="M870 535q70 35 125 0" stroke="#4b6d65" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- 10. Carta al futuro -->
+  <g transform="translate(14400)" filter="url(#grain)">
+    <rect width="1600" height="900" fill="#f5dfbd"/><use href="#window" x="70" y="70" width="520" height="350"/>
+    <use href="#student" x="520" y="275" width="250" height="465"/>
+    <use href="#desk" x="380" y="675" width="850" height="225"/>
+    <rect x="690" y="520" width="360" height="210" rx="12" fill="#fffaf0" stroke="#b59672" stroke-width="8" transform="rotate(-5 870 625)"/>
+    <path d="M740 575h245M740 620h205M740 665h145" stroke="#718b98" stroke-width="10"/>
+    <path d="M940 680c35-50 90-50 125 0-42 38-83 66-125 0" fill="#d56b6b"/>
+    <path d="M1090 485h260v165h-260z" fill="#f8edd7" stroke="#8d7358" stroke-width="8"/><path d="m1090 485 130 105 130-105" fill="none" stroke="#8d7358" stroke-width="8"/>
+    <circle cx="1240" cy="250" r="125" fill="#f2c55c" opacity=".32"/>
+  </g>
+</svg>
