@@ -52,6 +52,70 @@
   text-align: right;
 }
 
+/* Nivelación de las actividades 01 y 02.
+   Ambas tarjetas usan la misma estructura vertical y distribuyen
+   el espacio disponible sin dejar un bloque descompensado. */
+.activity-layout {
+  align-items: stretch;
+}
+
+.emotion-map,
+.unsent-message {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-map .panel-heading,
+.unsent-message .panel-heading {
+  min-height: 58px;
+  margin-bottom: 24px;
+}
+
+.emotion-map .school-map {
+  flex: 1 1 auto;
+  min-height: 210px;
+}
+
+.emotion-map .emotion-picker {
+  flex: 0 0 auto;
+  min-height: 104px;
+}
+
+.unsent-message label {
+  flex: 0 0 auto;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.unsent-message textarea {
+  flex: 1 1 auto;
+  min-height: 230px;
+  max-height: none;
+}
+
+.unsent-message .textarea-footer {
+  flex: 0 0 auto;
+  margin-top: 14px;
+}
+
+.unsent-message .privacy-note {
+  flex: 0 0 auto;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 780px) {
+  .emotion-map .panel-heading,
+  .unsent-message .panel-heading {
+    min-height: 0;
+  }
+
+  .unsent-message textarea {
+    min-height: 190px;
+  }
+}
+
 @media (max-width: 480px) {
   .chapter-card {
     min-height: 0;
@@ -69,5 +133,15 @@
 
   .chapter-card h3 {
     font-size: 1.2rem;
+  }
+
+  .emotion-map,
+  .unsent-message {
+    height: auto;
+  }
+
+  .emotion-map .school-map,
+  .unsent-message textarea {
+    min-height: 190px;
   }
 }
