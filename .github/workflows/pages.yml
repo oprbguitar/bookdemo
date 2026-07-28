@@ -23,14 +23,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Build chapter illustrations
+        shell: bash
+        run: |
+          mkdir -p assets
+          cat assets-src/chapters-a.part1.b64 assets-src/chapters-a.part2.b64 | base64 --decode > assets/chapters-a.webp
+          cat assets-src/chapters-b.part1.b64 assets-src/chapters-b.part2.b64 | base64 --decode > assets/chapters-b.webp
+          test -s assets/chapters-a.webp
+          test -s assets/chapters-b.webp
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
